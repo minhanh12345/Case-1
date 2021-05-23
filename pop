@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let arr = [1, 2, 3, 4, 5, 6]
+
+    function pop() {
+        arr[arr.length - 1] = null
+        arr.length = arr.length - 1
+        document.write(arr)
+    }
+
+    pop()
+</script>
+
+
+</body>
+</html>
