@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="case.js"></script>
+    <link rel='stylesheet' href="case.css">
+</head>
+<body>
+<div class="css_ngoai">
+    <div class="css_trong">
+
+        <div class="css_todo_list_top">
+            <div class="css_tieude">
+                <h3>TO DO LIST</h3>
+            </div>
+            <div class="cont_add_titulo_cont"><a href="#e" onclick="add_new()"><i
+                    class="material-icons">&#xE145;</i></a>
+            </div>
+
+           </div>
+        <div class="cont_crear_new">
+            <table class="table">
+                <tr>
+                    <th>Action</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td><select name="" id="action_select">
+                        <option value="KHẨN CẤP">KHẨN CẤP</option>
+                        <option value="QUAN TRỌNG">QUAN TRỌNG</option>
+                        <option value="BÌNH THƯỜNG">BÌNH THƯỜNG</option>
+
+                    </select>
+
+                    </td>
+                    <td>
+                        <input type="text" class="input_title_desc"/>
+
+
+                    </td>
+                    <td>
+                        <select name="" class="input_description_title" id="date_select">
+                            <option value="TODAY">TODAY</option>
+                            <option value="TOMORROW">TOMORROW</option>
+                        </select>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titl_description">Description</th>
+                </tr>
+                <tr>
+
+                    <td colspan="3">
+                        <input type="text" class="input_description" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button class="btn_add_fin" onclick="add_to_list()">ADD</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div class="cont_princ_lists">
+            <ul>
+                <li class="list_binhthuong li_num_0_1">
+                    <div class="col_md_1_list">
+                        <p>BÌNH THƯỜNG</p>
+                    </div>
+                    <div class="col_md_2_list">
+                        <h4>ĐI CHƠI</h4>
+                        <p>tại nhà Hưng </p>
+                    </div>
+                    <div class="col_md_3_list">
+                        <div class="cont_text_date">
+                            <p>TODAY</p>
+                        </div>
+                        <div class="cont_btns_options">
+                            <ul>
+
+                                <li><a href="#finish" onclick="finish_action('0','0_1');"><i
+                                        class="material-icons">&#xE5CA;</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                   </ul>
+              </div>
+
+
+
+    </div>
+</div>
+
+
+Resources
+<script>
+</script>
+</body>
+</html>
