@@ -1,0 +1,49 @@
+SELECT * FROM qlsv.marks;
+-- 1
+select * from student
+-- 2
+select * from subjects
+-- 3
+select avg(mark) from marks
+-- 4
+select subjectName 
+from subjects
+where subjectID=
+(select subjectID from marks
+where mark=(select max(mark) from marks))
+-- 5
+select mark
+from marks
+order by mark desc
+-- 6
+alter TABLE Subjects
+change column subjectname NVARCHAR(4000);
+-- 7
+create table subject1
+(select subjectID,concat ("day la mon",subjectname)as subjectName from subjects )
+
+ -- 8
+ delete StudentName
+from Student
+where StudentID='1'
+-- 9
+alter table classstudent
+drop foreign key studentID
+drop foreign key classID
+
+alter TABLE Marks
+drop foreign key SubjectID,
+drop foreign key StudentID;
+-- 10
+delete StudentName
+from Student
+where StudentID='1';
+-- 11
+alter TABLE Student
+add column Status1 Bit default 1
+-- 12
+update Students set status = 0 where StudentID = 1;
+update Students set status = 0 where StudentID = 2;
+update Students set status = 0 where StudentID = 3;
+update Students set status = 0 where StudentID = 4;
+update Students set status = 0 where StudentID = 5;
